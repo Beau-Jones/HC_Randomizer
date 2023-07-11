@@ -4,7 +4,7 @@ function showAlly() {
     document.getElementById("alliance").style.color="black";
     document.getElementById("allianceRaces").style.display="inline-block";
     document.getElementById("hordeRaces").style.display="none";
-    document.getElementById("divider").style.borderBottom="20px solid blue";
+    document.getElementById("divider").style.borderB    ottom="20px solid blue";
 }
 
 function showHorde() {
@@ -17,33 +17,33 @@ function showHorde() {
 }
 
 function showHuman() {
-    document.getElementById("raceFace").innerHTML="<img src=\"human.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"human.PNG\">";
 }
 
 function showDwarf() {
-    document.getElementById("raceFace").innerHTML="<img src=\"dwarf.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"dwarf.PNG\">";
 }
 
 function showNightElf() {
-    document.getElementById("raceFace").innerHTML="<img src=\"nightelf.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"nightelf.PNG\">";
 }
 
 function showGnome() {
-    document.getElementById("raceFace").innerHTML="<img src=\"gnome.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"gnome.PNG\">";
 }
 
 function showOrc() {
-    document.getElementById("raceFace").innerHTML="<img src=\"orc.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"orc.PNG\">";
 }
 
 function showUndead() {
-    document.getElementById("raceFace").innerHTML="<img src=\"undead.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"undead.PNG\">";
 }
 
 function showTauren() {
-    document.getElementById("raceFace").innerHTML="<img src=\"tauren.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"tauren.PNG\">";
 }
 
 function showTroll() {
-    document.getElementById("raceFace").innerHTML="<img src=\"troll.png\">";
+    document.getElementById("raceFace").innerHTML="<img src=\"troll.PNG\">";
 }

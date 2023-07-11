@@ -4,7 +4,7 @@ function showAlly() {
     document.getElementById("alliance").style.color="black";
     document.getElementById("allianceRaces").style.display="inline-block";
     document.getElementById("hordeRaces").style.display="none";
-    document.getElementById("divider").style.borderB    ottom="20px solid blue";
+    document.getElementById("divider").style.borderBottom="20px solid blue";
 }
 
 function showHorde() {

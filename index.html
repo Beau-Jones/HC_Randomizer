@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Hardcore Randomizer</title>
+</head>
+<body>
+    <h1>HARDCORE CLASSIC</h1>
+
+    <div class="wrapper">
+        <section>
+            <button id="alliance" class="factions" onClick="showAlly()">ALLIANCE</button>
+            <button id="horde" class="factions" onClick="showHorde()">HORDE</button>
+            <hr id="divider">
+
+        <div id="allianceRaces">
+            <button onClick="showHuman()">Human</button>
+            <button onClick="showDwarf()">Dwarf</button>
+            <button onClick="showNightElf()">Night Elf</button>
+            <button onClick="showGnome()">Gnome</button>
+        </div>
+        <div id="hordeRaces">
+            <button onClick="showOrc()">Orc</button>
+            <button onClick="showUndead()">Undead</button>
+            <button onClick="showTauren()">Tauren</button>
+            <button onClick="showTroll()">Troll</button>
+        </div>
+        <div id="raceFace">
+
+        </div>
+
+        <button id="random">Randomize</button>
+
+        </section>
+        <aside>
+            <div id="availableClasses">
+                <button>Warrior</button>
+                <button>Paladin</button>
+                <button>Hunter</button>
+                <button>Shaman</button>
+                <button>Rogue</button>
+                <button>Druid</button>
+                <button>Mage</button>
+                <button>Priest</button>
+                <button>Warlock</button>
+            </div>
+
+        </aside>
+    </div>
+</body>
+</html>

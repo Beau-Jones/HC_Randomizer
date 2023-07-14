@@ -87,6 +87,7 @@ img {
     margin-bottom: 1em;
 }
 
+
 button {
 display: inline-block;
 outline: 0;
@@ -104,4 +105,19 @@ box-shadow: 0 0 0 3px #ffffff inset;
 :hover{
     transform: translateY(-2px);
     }
+}
+
+
+#availableClasses {
+    vertical-align: top;
+}
+
+.logo {
+    margin-top: 3em;
+    width: 400px;
+}
+
+.class {
+    margin-top: 2em;
+    margin-bottom: 1em;
 }

@@ -17,35 +17,39 @@
             <hr id="divider">
 
         <div id="allianceRaces">
-            <button onClick="showHuman()">Human</button>
-            <button onClick="showDwarf()">Dwarf</button>
-            <button onClick="showNightElf()">Night Elf</button>
-            <button onClick="showGnome()">Gnome</button>
+            <button id="humanbtn" onClick="showHuman()" class="race">Human</button>
+            <button id="dwarfbtn" onClick="showDwarf()" class="race">Dwarf</button>
+            <button id="nelfbtn" onClick="showNightElf()" class="race">Night Elf</button>
+            <button id="gnomebtn" onClick="showGnome()" class="race">Gnome</button>
         </div>
         <div id="hordeRaces">
-            <button onClick="showOrc()">Orc</button>
-            <button onClick="showUndead()">Undead</button>
-            <button onClick="showTauren()">Tauren</button>
-            <button onClick="showTroll()">Troll</button>
+            <button id="orcbtn" onClick="showOrc()" class="race">Orc</button>
+            <button id="undeadbtn" onClick="showUndead()" class="race">Undead</button>
+            <button id="taurenbtn" onClick="showTauren()" class="race">Tauren</button>
+            <button id="trollbtn" onClick="showTroll()" class="race">Troll</button>
         </div>
         <div id="raceFace">
 
         </div>
 
-        <button id="random">Randomize</button>
+        <button id="random" onClick="randomize()">Randomize</button>
 
         </section>
         <aside>
             <div id="availableClasses">
-                <button>Warrior</button>
-                <button>Paladin</button>
-                <button>Hunter</button>
-                <button>Shaman</button>
-                <button>Rogue</button>
-                <button>Druid</button>
-                <button>Mage</button>
-                <button>Priest</button>
-                <button>Warlock</button>
+                <button id="warrior" onClick="showWarrior()" class="class">Warrior</button>
+                <button id="paladin" onClick="showPaladin()" class="class">Paladin</button>
+                <button id="hunter" onClick="showHunter()" class="class">Hunter</button>
+                <button id="shaman" onClick="showShaman()" class="class">Shaman</button>
+                <button id="rogue" onClick="showRogue()" class="class">Rogue</button>
+                <button id="druid" onClick="showDruid()" class="class">Druid</button>
+                <button id="mage" onClick="showMage()" class="class">Mage</button>
+                <button id="priest" onClick="showPriest()" class="class">Priest</button>
+                <button id="warlock" onClick="showWarlock()" class="class">Warlock</button>
+            </div>
+
+            <div id="classLogo">
+
             </div>
 
         </aside>

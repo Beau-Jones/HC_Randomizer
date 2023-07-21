@@ -14,7 +14,7 @@
         <section>
             <button id="alliance" class="factions" onClick="showAlly()">ALLIANCE</button>
             <button id="horde" class="factions" onClick="showHorde()">HORDE</button>
-            <hr id="divider">
+            <hr id="divider1">
 
         <div id="allianceRaces">
             <button id="humanbtn" onClick="showHuman()" class="race">Human</button>
@@ -35,7 +35,7 @@
         <button id="random" onClick="randomize()">Randomize</button>
 
         </section>
-        <aside>
+        <aside id="classContainer" style="display: none">
             <div id="availableClasses">
                 <button id="warrior" onClick="showWarrior()" class="class">Warrior</button>
                 <button id="paladin" onClick="showPaladin()" class="class">Paladin</button>
@@ -51,8 +51,18 @@
             <div id="classLogo">
 
             </div>
+            <button id="addBtn" onClick="addToList()" style="display: none">Add to My List</button><br><br>
+            <button id="removeBtn" onClick="removeLast()" style="display: inline-block">Remove Last</button><br><br>
+            
+            <hr id="divider2">
+
+            <h2 id="listHeader">My List</h2>
+            <ul id="myList">
+            </ul>
+        
 
         </aside>
     </div>
+
 </body>
 </html>

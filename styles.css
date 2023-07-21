@@ -31,6 +31,7 @@ section {
     border-radius: 5%;
 }
 
+
 aside {
     display: inline-block;
     background-image:url(blackrock.jpg);
@@ -40,6 +41,7 @@ aside {
     border-radius: 5%;
     margin: auto;
 }
+
 
 #alliance {
     display: inline-block;
@@ -87,6 +89,9 @@ img {
     margin-bottom: 1em;
 }
 
+h2 {
+    display: none;
+}
 
 button {
 display: inline-block;
@@ -120,4 +125,12 @@ box-shadow: 0 0 0 3px #ffffff inset;
 .class {
     margin-top: 2em;
     margin-bottom: 1em;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    margin-right: 2em;
 }

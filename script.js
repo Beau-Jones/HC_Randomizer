@@ -1,3 +1,6 @@
+let chosenRace = "";
+let chosenClass = "";
+
 
 function resetAllRaces() {
     let races = document.querySelectorAll('.race');
@@ -18,28 +21,37 @@ function resetAllClasses() {
 function showAlly() {
     resetAllRaces();
     resetAllClasses();
+    document.getElementById("classContainer").style.display="none";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("horde").style.backgroundColor="white";
     document.getElementById("alliance").style.backgroundColor="blue";
     document.getElementById("alliance").style.color="black";
     document.getElementById("allianceRaces").style.display="inline-block";
     document.getElementById("hordeRaces").style.display="none";
-    document.getElementById("divider").style.borderBottom="20px solid blue";
+    document.getElementById("divider1").style.borderBottom="20px solid blue";
+    document.getElementById("divider2").style.borderBottom="20px solid blue";
 }
 
 function showHorde() {
     resetAllRaces();
     resetAllClasses();
+    document.getElementById("classContainer").style.display="none";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("alliance").style.backgroundColor="white";
     document.getElementById("horde").style.backgroundColor="red";
     document.getElementById("horde").style.color="black";
     document.getElementById("allianceRaces").style.display="none";
     document.getElementById("hordeRaces").style.display="inline-block";
-    document.getElementById("divider").style.borderBottom="20px solid red";
+    document.getElementById("divider1").style.borderBottom="20px solid red";
+    document.getElementById("divider2").style.borderBottom="20px solid red";
 }
 
 function showHuman() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Human";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("humanbtn").style.backgroundColor="blue";
     document.getElementById("raceFace").innerHTML="<img src=\"human.PNG\">";
     // Display available classes
@@ -54,6 +66,9 @@ function showHuman() {
 function showDwarf() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Dwarf";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("dwarfbtn").style.backgroundColor="blue";
     document.getElementById("raceFace").innerHTML="<img src=\"dwarf.PNG\">";
     // Display available classes
@@ -67,6 +82,9 @@ function showDwarf() {
 function showNightElf() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Night Elf";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("nelfbtn").style.backgroundColor="blue";
     document.getElementById("raceFace").innerHTML="<img src=\"nightelf.PNG\">";
     // Display available classes
@@ -80,6 +98,9 @@ function showNightElf() {
 function showGnome() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Gnome";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("gnomebtn").style.backgroundColor="blue";
     document.getElementById("raceFace").innerHTML="<img src=\"gnome.PNG\">";
     // Display available classes
@@ -92,6 +113,9 @@ function showGnome() {
 function showOrc() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Orc";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("orcbtn").style.backgroundColor="red";
     document.getElementById("raceFace").innerHTML="<img src=\"orc.PNG\">";
     // Display available classes
@@ -105,6 +129,9 @@ function showOrc() {
 function showUndead() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Undead";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("undeadbtn").style.backgroundColor="red";
     document.getElementById("raceFace").innerHTML="<img src=\"undead.PNG\">";
     // Display available classes
@@ -118,6 +145,9 @@ function showUndead() {
 function showTauren() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Tauren";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("taurenbtn").style.backgroundColor="red";
     document.getElementById("raceFace").innerHTML="<img src=\"tauren.PNG\">";
     // Display available classes
@@ -130,6 +160,9 @@ function showTauren() {
 function showTroll() {
     resetAllRaces();
     resetAllClasses();
+    chosenRace = "Troll";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("addBtn").style.display="none";
     document.getElementById("trollbtn").style.backgroundColor="red";
     document.getElementById("raceFace").innerHTML="<img src=\"troll.PNG\">";
     // Display available classes
@@ -142,39 +175,57 @@ function showTroll() {
 }
 
 function showWarrior() {
+    chosenClass = "Warrior";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"warrior.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showPaladin() {
+    chosenClass = "Paladin";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"paladin.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showHunter() {
+    chosenClass = "Hunter";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"hunter.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showShaman() {
+    chosenClass = "Shaman";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"shaman.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showRogue() {
+    chosenClass = "Rogue";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"rogue.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showDruid() {
+    chosenClass = "Druid";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"druid.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showMage() {
+    chosenClass = "Mage";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"mage.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showPriest() {
+    chosenClass = "Priest";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"priest.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 function showWarlock() {
+    chosenClass = "Warlock";
     document.getElementById("classLogo").innerHTML="<img class=\"logo\" src=\"warlock.PNG\">";
+    document.getElementById("addBtn").style.display="inline-block";
 }
 
 /* How to do the randomize button:
@@ -324,7 +375,23 @@ function randomize() {
             showPriest();
     }
 }
+
 } 
+
+function addToList() {
+    console.log(chosenRace);
+    console.log(chosenClass);
+
+    document.getElementById("listHeader").style.display="block";
+    let li = document.createElement("li");
+    document.getElementById("myList").appendChild(li);
+    li.textContent = `${chosenRace}` + " " + `${chosenClass}`;
+}
+
+function removeLast() {
+    let list = document.getElementById("myList");
+    list.removeChild(list.lastElementChild);
+}
 
 
 /*

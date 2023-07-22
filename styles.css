@@ -24,6 +24,7 @@ h1 {
 section {
     display: inline-block;
     width: 30%;
+    min-width: 312px;
     height: 100%;
     margin: auto;
     background-image: url(blackrock.jpg);
@@ -36,6 +37,7 @@ aside {
     display: inline-block;
     background-image:url(blackrock.jpg);
     width: 50%;
+    min-width: 410px;
     height: 100%;
     border: 5px double rgb(71, 42, 4);
     border-radius: 5%;
@@ -133,4 +135,22 @@ ul {
 
 li {
     margin-right: 2em;
+}
+
+#listContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#randomizeList {
+    height: 10%;
+    margin: auto;
+}
+
+#listHeader {
+    margin: auto;
 }

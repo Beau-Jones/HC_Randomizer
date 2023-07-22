@@ -382,8 +382,15 @@ function addToList() {
     console.log(chosenRace);
     console.log(chosenClass);
 
+    document.getElementById("listContainer").style.display="flex";
+    document.getElementById("randomizeList").style.display="inline-block";
     document.getElementById("listHeader").style.display="block";
     let li = document.createElement("li");
+        if (chosenRace == "Orc" || chosenRace == "Undead" || chosenRace == "Tauren" || chosenRace == "Troll") {
+            li.style.backgroundColor="red";
+        } else if (chosenRace == "Human" || chosenRace == "Dwarf" || chosenRace == "Night Elf" || chosenRace == "Gnome") {
+            li.style.backgroundColor="blue";
+        }
     document.getElementById("myList").appendChild(li);
     li.textContent = `${chosenRace}` + " " + `${chosenClass}`;
 }
@@ -391,6 +398,9 @@ function addToList() {
 function removeLast() {
     let list = document.getElementById("myList");
     list.removeChild(list.lastElementChild);
+    if (document.getElementById("myList").innerHTML.trim() == "") {
+        document.getElementById("listContainer").style.display="none";
+    }
 }
 
 
@@ -419,5 +429,13 @@ if (chosenClass == "Warrior") {
 */
 
 
-
+function randomFromList() {
+    let list = document.getElementById('myList').childNodes;
+    let thisArr = [];
+    for (let i = 0; i < list.length; i++) {
+    let arrValue = list[i].textContent;
+    thisArr.push(arrValue);
+    alert(arrValue);
+}
+}
 

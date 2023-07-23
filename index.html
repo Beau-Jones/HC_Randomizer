@@ -11,7 +11,7 @@
     <h1>HARDCORE CLASSIC</h1>
 
     <div class="wrapper">
-        <section>
+        <section id="raceContainer">
             <button id="alliance" class="factions" onClick="showAlly()">ALLIANCE</button>
             <button id="horde" class="factions" onClick="showHorde()">HORDE</button>
             <hr id="divider1">
@@ -64,6 +64,12 @@
             </div>
 
         </aside>
+
+        <section id="chosenContainer" style="display: none">
+            <p>Your Hardcore Character is:</p>
+            <p id="yourChar"></p>
+        </section>
+
     </div>
 
 </body>

@@ -1,6 +1,7 @@
 let chosenRace = "";
 let chosenClass = "";
-
+let choice = "";
+let thisArr = [];
 
 function resetAllRaces() {
     let races = document.querySelectorAll('.race');
@@ -379,9 +380,6 @@ function randomize() {
 } 
 
 function addToList() {
-    console.log(chosenRace);
-    console.log(chosenClass);
-
     document.getElementById("listContainer").style.display="flex";
     document.getElementById("randomizeList").style.display="inline-block";
     document.getElementById("listHeader").style.display="block";
@@ -431,11 +429,30 @@ if (chosenClass == "Warrior") {
 
 function randomFromList() {
     let list = document.getElementById('myList').childNodes;
-    let thisArr = [];
     for (let i = 0; i < list.length; i++) {
     let arrValue = list[i].textContent;
     thisArr.push(arrValue);
-    alert(arrValue);
+
+    }
+    thisArr.shift();
+    choice = thisArr[Math.floor(Math.random() * thisArr.length)];
+
+    document.getElementById("raceContainer").style.display="none";
+    document.getElementById("classContainer").style.display="none";
+    document.getElementById("chosenContainer").style.display="inline-block";
+    document.getElementById("yourChar").textContent=`${choice}`;
+
+    for (let i = 0; i < list.length; i++) {
+        console.log(thisArr[i]);
+    }
+
+    console.log(thisArr.length);
+    console.log(choice);
+    thisArr = [];
+    choice = "";
+
 }
-}
+
+
+
 

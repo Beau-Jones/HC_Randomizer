@@ -1,7 +1,7 @@
 body {
     background-image:url(rock_background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     color: white;
 }
 
@@ -64,6 +64,7 @@ aside {
 hr {
     border-bottom: 20px solid rgb(0, 0, 0);
     outline: 7px double rgb(255, 255, 255);
+    margin-bottom: 1em;
     width: 95%;
 }
 
@@ -135,6 +136,11 @@ ul {
 
 li {
     margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .25em;
+    border-radius: 10%;
+
 }
 
 #listContainer {
@@ -149,8 +155,17 @@ li {
 #randomizeList {
     height: 10%;
     margin: auto;
+    margin-right: 1em;
 }
 
 #listHeader {
     margin: auto;
+}
+
+#yourChar {
+    font-size: 5em;
+}
+
+section p {
+    font-size: 2em;
 }

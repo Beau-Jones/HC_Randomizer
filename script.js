@@ -3,6 +3,18 @@ let chosenClass = "";
 let choice = "";
 let thisArr = [];
 
+/* Modal close when click elsewhere */
+
+var modal = document.getElementById('loginWindow');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+/* Functions to reset highlighted races on left, reset shown classes on right */
+
 function resetAllRaces() {
     let races = document.querySelectorAll('.race');
     for (let i = 0; i < races.length; i++) {

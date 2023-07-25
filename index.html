@@ -8,9 +8,46 @@
     <title>Hardcore Randomizer</title>
 </head>
 <body>
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <button class="navElem">Sign Up</button>
+        <button onclick="document.getElementById('loginWindow').style.display='flex'" class="navElem">Login</button>
+      </div>
+
+      <!-- The Modal -->
+<div id="loginWindow" class="modal">
+    <span onclick="document.getElementById('loginWindow').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="formContent">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <br>
+        <button type="button" onclick="document.getElementById('loginWindow').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#" style="text-decoration: none; color: red">password?</a></span>
+      </div>
+      
+    </form>
+  </div>
+
+  <!-- Heading and Main Content -->
+
     <h1>HARDCORE CLASSIC</h1>
 
     <div class="wrapper">
+
+        <!-- Left Side, Races and Factions -->
+
         <section id="raceContainer">
             <button id="alliance" class="factions" onClick="showAlly()">ALLIANCE</button>
             <button id="horde" class="factions" onClick="showHorde()">HORDE</button>
@@ -34,7 +71,11 @@
 
         <button id="random" onClick="randomize()">Randomize</button>
 
+
         </section>
+
+        <!-- Right Side, Classes & List -->
+
         <aside id="classContainer" style="display: none">
             <div id="availableClasses">
                 <button id="warrior" onClick="showWarrior()" class="class">Warrior</button>
@@ -55,6 +96,8 @@
             <button id="removeBtn" onClick="removeLast()" style="display: inline-block">Remove Last</button><br><br>
             
             <hr id="divider2">
+
+            <!-- List -->
 
             <div id="listContainer">
                 <h2 id="listHeader">My List</h2>

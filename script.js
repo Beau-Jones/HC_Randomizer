@@ -453,6 +453,10 @@ function randomFromList() {
 
 }
 
-
+function goBack() {
+    document.getElementById("raceContainer").style.display="inline-block";
+    document.getElementById("classContainer").style.display="inline-block";
+    document.getElementById("chosenContainer").style.display="none";
+}
 
 
